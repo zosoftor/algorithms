@@ -37,15 +37,18 @@ public class Main {
             return newArrList;
         }
         //You could use any pivot point you like really with this algorithm working essentially via D&C.  I just chose
-        //the first element for brevity then wrapped in its own ArrayList to make sure I could package it with the other
+        //the first element for brevity (and to display worst case for QS essentially)
+        // then wrapped in its own ArrayList to make sure I could package it with the other
         //sub-lists later.
-        int pivot = arrList.get(0);
+        int pivot = arrList.get(0); //creates the highest call-stack for QS so bad case as far as Big O is concerned
+        //would be better to choose a pivot at random to provide average case and drop call-stack height as well as
+        //execution time from O(n) to O(n log n)
         ArrayList<Integer> pivotList = new ArrayList<>();
         pivotList.add(arrList.get(0));
-        //creating sub-lists below for values lesser than/greater than chosen pivot point
+        //creating sub-lists below for values less than/greater than chosen pivot point
         ArrayList<Integer> lessThanPivot = new ArrayList<>();
         ArrayList<Integer> greaterThanPivot = new ArrayList<>();
-        //going through the passed in list and parsing values into their correct list based on chosen pivot
+        //going through the passed in list and partitioning values into their correct list based on chosen pivot
         for(int element: arrList){
             if(element > pivot){
                 greaterThanPivot.add(element);
