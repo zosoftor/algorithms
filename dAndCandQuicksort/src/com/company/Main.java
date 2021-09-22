@@ -14,7 +14,18 @@ public class Main {
         arrList.add(3);
         arrList.add(456);
         arrList.add(59);
-        //I cannot believe this worked!! Haha!  Had to make it an ArrayList of ArrayLists of ArrayLists but hey...it works!
+        arrList.add(651);
+        arrList.add(8);
+        arrList.add(31);
+        arrList.add(76);
+        arrList.add(999);
+        arrList.add(5431);
+        arrList.add(-194);
+        arrList.add(0);
+        arrList.add(-764);
+        arrList.add(29);
+        //I cannot believe this worked!! Haha!  Had to make it an ArrayList of ArrayLists of ArrayLists and on and on but hey...it works!
+        //we just ignore all the brackets as is common practice in modern programming, right?
         System.out.println(quicksort(arrList));
     }
 
