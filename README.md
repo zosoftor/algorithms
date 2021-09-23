@@ -1,2 +1,2 @@
 # algorithms
-A repo of implementations of various algorithms (done in Java).
+A repo of implementations of various data structures & algorithms (done in Java).
