@@ -25,7 +25,7 @@ public class Main {
         //show all balances in hash table
         names = balance.keys();
 
-        while(names.hasMoreELements()){
+        while(names.hasMoreElements()){
             str = (String) names.nextElement();
             System.out.println(str + ": " + balance.get(str));
         }
